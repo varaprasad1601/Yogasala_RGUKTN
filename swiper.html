@@ -1,0 +1,280 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./static/bootstrap/styles/swiper-bundle.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .cards{
+            height: 300px;
+            border-radius: 15px;
+            background-color: whitesmoke;
+        }
+        .image-content{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -100px;
+        }
+        .card-image{
+            border: 5px solid rgba(165, 42, 42, 0.250);
+            width: 175px;
+            height: 175px;
+            border-radius: 50%;
+            background:radial-gradient(white,#ffb669);
+        }
+        .card-image img{
+            border-radius: 50%;
+        }
+        .card-button{
+            cursor: pointer;
+            position: absolute;
+            border-radius: 50%;
+            margin-top: 125px;
+            margin-left: 125px;
+            width: 50px;
+            height: 50px;
+            background:linear-gradient(45deg,#ffb669,#f68207);
+            filter: drop-shadow(0px 2px 3px black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: none;
+            border: none;
+        }
+        .card-button:hover{
+            filter: drop-shadow(0px 2px 5px black);
+        }
+        .card-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .slider-content{
+            height: max-content !important;
+            overflow-x: hidden;
+            padding: 90px 12px 30px 12px;
+            margin:  0px 40px;
+            height: 300px;
+        }
+        .slider-container{
+            max-width: 1300px;
+            width: 100%;
+            padding: 10px 0px;
+        }
+        .all-cards{
+            outline:none;
+            width:40%;
+            border-radius:50px;
+            border:1px solid brown;
+            background:linear-gradient(To Top,#ffb669,#f68207);
+            color:brown;font-weight:600
+        }
+        .all-cards:hover{
+            filter: drop-shadow(0px 3px 5px gray);
+        }
+        .swiper-button-next{
+            right: 0;
+            color: #ffc281;
+        }
+        .swiper-button-prev{
+            left:0;
+            color: #ffc281;
+        }
+        .swiper-button-prev::before, .swiper-button-prev::after,
+        .swiper-button-next:before, .swiper-button-next::after{
+            font-size: 25px;
+            font-weight: bolder;
+        }
+        .swiper-button-prev:hover, .swiper-button-next:hover{
+            color: #f68207;
+        }
+        .swiper-pagination-bullet{
+            background-color: #ff8400;
+            opacity: 0.5;
+        }
+        .swiper-pagination-bullet-active{
+            background-color: #f68207;
+            opacity: 1;
+        }
+        @media screen and (max-width:760px) {
+            .slider-content{
+                margin: 0px 5px;
+            }
+            .cards{
+                height:320px
+            }
+            .swiper-button-next, .swiper-button-prev{
+                display: none !important;
+            }
+            .all-cards{
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container swiper fadein">
+        <div class="slider-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="cards border shadow swiper-slide">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./static/images/testimonials/t1.png" width="100%">
+                        </div>
+                        <button class="card-button" value="https://www.youtube.com/embed/jBEPQTD5xOk?si=2s6c04nJYRYUTiI4"><i class="fa-solid fa-play" style="font-size: 25px; color:whitesmoke; padding:0px; margin-top:1px; margin-left:3px;filter:drop-shadow(1px 1px 1px black)"></i></button>
+                    </div>
+                    <div class="card-content px-3 mt-2">
+                        <center><b  class="card-name font-4"><span>Shri M. Venkaiah Naidu</span></b></center>
+                        <center><p class="card-designation font-4 font-smaller text-gray mb-0">Former Vice President of India</p></center>
+                        <center><p class="card-description font-4 font-small mt-3 " style="height: 100px; overflow:hidden;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum accusantium et explicabo sed. Totam, fuga molestiae. Ipsam harum, veniam nemo labore officiis impedit incidunt magni ad, illum rerum, nostrum esse!</p></center>
+                    </div>
+                </div>
+                <div class="cards border shadow swiper-slide">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./static/images/testimonials/t2.png" width="100%">
+                        </div>
+                        <button class="card-button" value="https://www.youtube.com/embed/IBz2Anb2QCk?si=sdoe0Bu9Z8nr4XV0"><i class="fa-solid fa-play" style="font-size: 25px; color:whitesmoke; padding:0px; margin-top:1px; margin-left:3px;filter:drop-shadow(1px 1px 1px black)"></i></button>
+                    </div>
+                    <div class="card-content px-3 mt-2">
+                        <center><b  class="card-name font-4"><span>Shri Ramnath Kovind ji </span></b></center>
+                        <center><p class="card-designation font-4 font-smaller text-gray mb-0">Former President of India</p></center>
+                        <center><p class="card-description font-4 font-small mt-3 " style="height: 100px; overflow:hidden;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum accusantium et explicabo sed. Totam, fuga molestiae. Ipsam harum, veniam nemo labore officiis impedit incidunt magni ad, illum rerum, nostrum esse!</p></center>
+                    </div>
+                </div>
+                <div class="cards border shadow swiper-slide">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./static/images/testimonials/t3.png" width="100%">
+                        </div>
+                        <button class="card-button" value="https://www.youtube.com/embed/DFh8PSZ4M68?si=H47Z1EyYz6hazf9n&amp;start=22"><i class="fa-solid fa-play" style="font-size: 25px; color:whitesmoke; padding:0px; margin-top:1px; margin-left:3px;filter:drop-shadow(1px 1px 1px black)"></i></button>
+                    </div>
+                    <div class="card-content px-3 mt-2">
+                        <center><b  class="card-name font-4"><span>Shri. S. P. Balasubrahmanyam</span></b></center>
+                        <center><p class="card-designation font-4 font-smaller text-gray mb-0">Singer</p></center>
+                        <center><p class="card-description font-4 font-small mt-3 " style="height: 100px; overflow:hidden;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum accusantium et explicabo sed. Totam, fuga molestiae. Ipsam harum, veniam nemo labore officiis impedit incidunt magni ad, illum rerum, nostrum esse!</p></center>
+                    </div>
+                </div>
+                <div class="cards border shadow swiper-slide">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./static/images/testimonials/t1.png" width="100%">
+                        </div>
+                        <button class="card-button" value="4"><i class="fa-solid fa-play" style="font-size: 25px; color:whitesmoke; padding:0px; margin-top:1px; margin-left:3px;filter:drop-shadow(1px 1px 1px black)"></i></button>
+                    </div>
+                    <div class="card-content px-3 mt-2">
+                        <center><b  class="card-name font-4"><span>Shri M. Venkaiah Naidu</span></b></center>
+                        <center><p class="card-designation font-4 font-smaller text-gray mb-0">Former Vice President of India</p></center>
+                        <center><p class="card-description font-4 font-small mt-3 " style="height: 100px; overflow:hidden;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum accusantium et explicabo sed. Totam, fuga molestiae. Ipsam harum, veniam nemo labore officiis impedit incidunt magni ad, illum rerum, nostrum esse!</p></center>
+                    </div>
+                </div>
+                <div class="cards border shadow swiper-slide">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./static/images/testimonials/t2.png" width="100%">
+                        </div>
+                        <button class="card-button" value="5"><i class="fa-solid fa-play" style="font-size: 25px; color:whitesmoke; padding:0px; margin-top:1px; margin-left:3px;filter:drop-shadow(1px 1px 1px black)"></i></button>
+                    </div>
+                    <div class="card-content px-3 mt-2">
+                        <center><b  class="card-name font-4"><span>Shri Ramnath Kovind ji </span></b></center>
+                        <center><p class="card-designation font-4 font-smaller text-gray mb-0">Former President of India</p></center>
+                        <center><p class="card-description font-4 font-small mt-3 " style="height: 100px; overflow:hidden;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum accusantium et explicabo sed. Totam, fuga molestiae. Ipsam harum, veniam nemo labore officiis impedit incidunt magni ad, illum rerum, nostrum esse!</p></center>
+                    </div>
+                </div>
+                <div class="cards border shadow swiper-slide">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="./static/images/testimonials/t3.png" width="100%">
+                        </div>
+                        <button class="card-button" value="6"><i class="fa-solid fa-play" style="font-size: 25px; color:whitesmoke; padding:0px; margin-top:1px; margin-left:3px;filter:drop-shadow(1px 1px 1px black)"></i></button>
+                    </div>
+                    <div class="card-content px-3 mt-2">
+                        <center><b  class="card-name font-4"><span>Shri. S. P. Balasubrahmanyam</span></b></center>
+                        <center><p class="card-designation font-4 font-smaller text-gray mb-0">Singer</p></center>
+                        <center><p class="card-description font-4 font-small mt-3 " style="height: 100px; overflow:hidden;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum accusantium et explicabo sed. Totam, fuga molestiae. Ipsam harum, veniam nemo labore officiis impedit incidunt magni ad, illum rerum, nostrum esse!</p></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <center><button class="my-3 py-2 font-4 all-cards fadein">View More</button></center>
+
+    <div class="modal-container fadein" id="modal-container">
+        <div class="modal-box">
+            <iframe width="500" height="333" id="iframe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+
+<script src="./static/bootstrap/scripts/swiper-bundle.min.js"></script>
+<script>
+
+var card_button = document.querySelectorAll('.card-button');
+var modal_container = document.getElementById('modal-container');
+var iframe = document.getElementById('iframe');
+card_button.forEach((item)=>{
+    item.addEventListener('click',()=>{
+        iframe.src = item.value;
+        modal_container.style.display = 'flex';
+        $("body").css("overflow", "hidden");
+    })
+})
+
+modal_container.addEventListener('click',()=>{
+    iframe.removeAttribute('src')
+    modal_container.style.display = 'none'
+    $("body").css("overflow", "auto");
+})
+
+// Swiper
+const swiper = new Swiper('.slider-content', {
+    // Optional parameters
+    loop: true,
+    spaceBetween: 25,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: 'true',
+      dynamicBullets: true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+
+    breakpoints:{
+        0:{
+            slidesPerView: 1
+        },
+        520:{
+            slidesPerView: 2
+        },
+        950:{
+            slidesPerView: 3
+        }
+    }
+});
+</script>
+</html>

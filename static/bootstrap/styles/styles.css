@@ -1,0 +1,140 @@
+/* Font Styles */
+.font-1, .btn-font-1{
+    font-family: 'Expletus Sans' !important;
+}
+.font-2, .btn-font-2{
+    font-family: 'Gentium Book Plus' !important;
+}
+.font-3, .btn-font-3{
+    font-family: 'Marcellus' !important;
+}
+.font-4, .btn-font-4{
+    font-family: 'Lato' !important;
+}
+
+
+/* Font-Weight */
+.font-small{
+    font-size: small !important;
+}
+.font-smaller{
+    font-size: smaller !important;
+}
+.font-medium{
+    font-size:medium !important;
+}
+.font-large{
+    font-size: large !important;
+}
+.font-larger{
+    font-size: larger !important;
+}
+
+
+/* Text Alignment */
+.text-justify{
+    text-align: justify !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.text-left{
+    text-align: left !important;
+}
+.text-right{
+    text-align: right !important;
+}
+
+
+/* Colors */
+.bg-gray{
+    background-color: gray !important;
+}
+.text-gray{
+    color: rgb(133, 133, 133) !important;
+}
+
+
+/* Flex */
+.row-flex{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.column-flex{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.around{
+    display: flex !important;
+    justify-content: space-around !important;
+}
+.evenly{
+    justify-content: space-evenly !important;
+}
+.between{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+
+/* Borders */
+.border-bottom{
+    border-bottom:1px solid whitesmoke !important;
+}
+.border-top{
+    border-top:1px solid whitesmoke !important;
+}
+
+
+/* Fade In */
+.fadein{
+    transform: translateY(50px) !important;
+    opacity: 0  !important;
+    transition: all 1s ease !important;
+}
+.active{
+    transform: translateY(0px) !important;
+    opacity: 1 !important;
+}
+
+
+/* Others */
+hr{
+    margin: 5px 0px !important;
+}
+
+
+/* Modal */
+.modal-container{
+    position: fixed;
+    left:0;
+    top: 0;
+    z-index: 90;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.900);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: display 5s ease;
+}
+iframe{
+    width: 100% !important;
+    height: 100% !important;
+}
+.modal-box{
+    z-index: 100;
+    width: 59%;
+    height: 70%;
+}
+
+@media screen and (max-width:500px) {
+    .modal-box{
+        width: 100% !important;
+        height: 25% !important;
+        margin-top:-100px !important;
+    }
+}
