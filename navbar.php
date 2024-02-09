@@ -17,7 +17,7 @@
             position: -webkit-sticky !important;
             position: sticky !important;
             top: 0px !important;
-            z-index: 100;
+            z-index: 50;
         }
         @media screen and (max-width:500px) {
             .navbar-logo-div{
@@ -58,7 +58,7 @@
             </div>
             <div class="navbar-logo-div d-flex flex-column align-items-center pt-2" style="width: 100%; border-bottom:1px solid lightgray;">
                 <div class="navbar-logo">
-                    <img src="./logos/yogasala_logo.png" width="80">
+                    <img src="./static/images/logos/yogasala_logo.png" width="80">
                 </div>
                 <div class="navbar-head">
                     <h5><b>Yogasala RGUKTN</b></h5>
@@ -73,7 +73,7 @@
                 <div class="navbar-nav-div collapse navbar-collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">Home</a>
+                            <a href="./index.php" class="nav-link active">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Events</a>
