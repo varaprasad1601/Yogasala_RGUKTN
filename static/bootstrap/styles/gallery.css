@@ -1,0 +1,79 @@
+.modal-container{
+    position: fixed;
+    left:0;
+    top: 0;
+    z-index: 90;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.900);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    width: 100% !important;
+    height: 100% !important;
+}
+.modal-box{
+    z-index: 100;
+    width:90%;
+    height:90vh;
+}
+.close{
+    position:absolute;
+    top:10px;
+    right:40px;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+    z-index:120;
+}
+.modal-prev, .modal-next{
+    z-index: 110;
+    height: 100vh !important;
+    width: 5%;
+    position: absolute !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.modal-prev{
+    left: 0 !important;
+}
+.modal-next{
+    right: 0 !important;
+}
+.modal-prev-icon, .modal-next-icon{
+    background-color: black;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer;
+    font-size: 20px;
+}
+.modal-prev-icon:hover, .modal-next-icon:hover{
+    background-color: white;
+    color: black;
+}
+.modal-image{
+    background-size: contain;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    cursor: grab;
+}
+.image-index{
+    position: absolute;
+    bottom: 6px;
+    z-index: 110;
+    color: white;
+    padding: 5px 20px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: small;
+}

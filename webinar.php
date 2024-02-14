@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <html>
 <head>
     <meta charset="UTF-8">
@@ -20,6 +22,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Expletus Sans">
 
     <style>
+        body{
+            scroll-behavior: smooth;
+        }
         ::-webkit-scrollbar{
             width: 5px;
             background-color: transparent;
@@ -43,6 +48,13 @@
         .webinar-video:hover{
             background-color: lightgrey !important;
         }
+        .webinar-video::before{
+            position: absolute;
+            content: "";
+            background-color: white;
+            width: 20px;
+            height: 20px;
+        }
         .webinar-play{
             font-size: 50px;
             color:red;
@@ -52,37 +64,50 @@
             font-size: 55px;
             color:red;
         }
-        @media screen and (max-width:520){
+        @media screen and (max-width:520px){
             .webinar-button{
                 margin: 100px !important;
+            }
+            .webinar-video{
+                height: 200px !important;
+            }
+        }
+        @media screen and (min-width:950px){
+            .webinar-main-image{
+                height: 375px !important;
+            }
+            .img-image{
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: fill;
             }
         }
     </style>
 
 </head>
-<body class="bg-light">
+<body style="background-color:papayawhip">
     <?php include 'navbar.php' ?>
-    <div class="container-fluid">
-        <div class="row p-2 p-sm-4">
+    <div class="container-fluid  py-2 py-md-4">
+        <div class="row p-2 px-sm-3">
             <div class="col-md-12 p-0 border rounded d-md-flex justify-content-between bg-white" style="position: relative;">
-                <div class="col-md-5 col-sm-12 p-sm-3 p-2">
-                    <img src="./static/images/webinars/day1.png" width="100%">
+                <div class="col-md-5 col-sm-12 p-sm-3 p-2 webinar-main-image">
+                    <img src="./static/images/webinars/astanga_yogaa.png" class="img-image img-fluid">
                 </div>
                 <div class="col-md-7 col-sm-12 p-sm-3 p-2 m-0 d-flex flex-column justify-content-between">
                     <div class="">
                         <div class="webinar-title">
-                            <b class="font-4 font-larger">Astanga Yoga Level-1 400 characters</b>
+                            <b class="font-4 font-larger">Astanga Yoga Level-1 415 characters</b>
                             <hr>
                         </div>
                         <div class="webinar-info">
-                            <span class="font-4 font-small text-gray smaller"><span><i class="fa fa-calendar" aria-hidden="true"></i> 16 January, 2017</span></span><br>
-                            <span class="font-4 font-small text-gray smaller"><span><i class="fa fa-users mt-1" aria-hidden="true"></i> 1000 Members</span></span><br>
+                            <span class="font-4 text-gray smaller"><span><i class="fa fa-calendar" aria-hidden="true"></i> 16 January, 2017</span></span>
+                            <span class="font-4 text-gray smaller"><span><i class="fa fa-users" aria-hidden="true"></i> 1000 Members</span></span>
                         </div>
                         <div class="webinar-description-head mt-3">
                             <b><span class="font-4">Description:</span></b>
                         </div>
                         <div class="webinar-description mt-2">
-                            <p class="font-4 font-smaller text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quasi itaque odio sint quae. Reprehenderit, impedit beatae accusantium itaque ullam eligendi fuga quia nobis consequuntur corrupti repellendus omnis aperiam labore.</p>
+                            <p class="font-4 font-smaller text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi neque adipisci beatae, vero excepturi eveniet voluptate accusamus ipsum vitae aut itaque molestiae commodi perspiciatis ut dolorem consequatur quaerat. Consequuntur, iure.</p>
                         </div>
                     </div>
                     <div class="col-12 d-flex justify-content-end">
@@ -91,8 +116,8 @@
                 </div>
             </div>
         </div>
-        <div class="row px-4 py-0 mt-3 mt-sm-0">
-            <p class="p-0 font-4 m-0">Videos</p>
+        <div class="row px-md-4 px-3 py-0 mt-3">
+            <p class="p-0 font-4 m-0 bold">Videos</p>
         </div>
         <hr>
         <div class="row px-md-4 py-2 fadein">
@@ -108,7 +133,7 @@
                 </button>
             </div>
         </div>
-        <div class="modal-container fadein" id="modal-container">
+        <div class="modal-container" id="modal-container">
             <div class="close" id="close" style="position:absolute;top:25px; right:40px;color:white;font-size:30px;cursor:pointer;">&times;</div>
             <div class="modal-box">
                 <iframe width="500" height="333" id="iframe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

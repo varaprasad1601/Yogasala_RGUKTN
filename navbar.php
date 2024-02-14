@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <style>
         .nav-link, .navbar-head, .signature, .welcome-div, .location{
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -19,7 +20,7 @@
             top: 0px !important;
             z-index: 50;
         }
-        @media screen and (max-width:500px) {
+        @media screen and (max-width:520px) {
             .navbar-logo-div{
                 height: 45px !important;
                 padding: 3px 0px !important;
@@ -52,7 +53,7 @@
 <body>
     <!-- Header -->
     <div class="container-fluid">
-        <div class="row">
+        <div class="row bg-white">
             <div class="location d-flex" style="position: absolute;cursor:pointer;">
                 <a href="https://maps.app.goo.gl/4sPds4QWZ9HaAi5P9" style="color:black; text-decoration:none" target="_blank"><i class="fa-solid fa-location-dot mt-1 location-text" style="font-size: 12px;"></i><span style="font-size:13px;" class="location-text">&nbsp; Yogasala RGUKT, Nuzvid, Andhra Pradesh, India - 521202</span></a>
             </div>
@@ -61,7 +62,7 @@
                     <img src="./static/images/logos/yogasala_logo.png" width="80">
                 </div>
                 <div class="navbar-head">
-                    <h5><b>Yogasala RGUKTN</b></h5>
+                    <h5><b class="brand">Yogasala RGUKTN</b></h5>
                 </div>
             </div>
         </div>

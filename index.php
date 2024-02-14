@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium Book Plus">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Expletus Sans">
     <style>
+        body{
+            scroll-behavior: smooth;
+        }
         ::selection{
             user-select: none;
         }
@@ -90,6 +93,37 @@
             background-color:#e97e0c !important;
             color:white !important;
         }
+        .outreach-image{
+            height: 250px !important;
+        }
+        .outreach-content{
+            height: 100%;
+            color: white;
+            background:radial-gradient(#c65c00f3,#642f00f3);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .outreach-image:hover .outreach-content{
+            opacity: 1;
+        }
+        .outreach-title{
+            height: 75% !important;
+            cursor:default
+        }
+        .outreach-info{
+            height: 25% !important;
+            cursor: pointer;
+        }
+        .outreach-button:hover{
+            background:linear-gradient(#642f00f3,#c65c00f3);
+            color: white !important;
+        }
+        .eminent-row:nth-child(even){
+            flex-direction: row-reverse !important;
+        }
+        .eminent-row:nth-child(odd){
+            background-color: whitesmoke;
+        }
         @keyframes medal-rotation {
             0%{
 
@@ -120,6 +154,9 @@
             .webinar:nth-child(3){
                 display: none !important;
             }
+            .outreach-image-block:nth-child(3){
+                display: none !important;
+            }
             .main-mobile{
                 display: flex;
                 flex-wrap: wrap;
@@ -132,6 +169,9 @@
             }
             .performance-margin{
                 margin-bottom: -20px !important;
+            }
+            .smaller{
+                font-size: 11px !important;
             }
         }
         @media screen and (max-width:520px) {
@@ -214,9 +254,6 @@
             .initial-padding{
                 padding: 15px 10px !important;
             }
-            .smaller{
-                font-size: 11px !important;
-            }
             .pt-md{
                 padding-top: 40px !important;
             }
@@ -231,6 +268,9 @@
                 margin-top: 0px !important;
             }
             .webinar:nth-child(3){
+                display: block !important;
+            }
+            .outreach-image-block:nth-child(3){
                 display: block !important;
             }
         }
@@ -260,22 +300,26 @@
         <div class="welcome-div d-flex justify-content-center aling-items-center my-3">
             <h1 class="font-3 fadein">Welcome to Yoga Arena</h1>
         </div>
-        <div class="carousel-row row p-0 mb-5 fadein" style="height: 460px;">
-            <div class="carousel slide carousel-fade p-0" data-bs-ride="carousel" id="carousel" style="height: 100%;" data-bs-interval="1000" data-bs-pause="hover">
+        <div class="carousel-row row p-0 mb-5 fadein" style="height: 500px;">
+            <div class="carousel slide carousel-fade p-0" data-bs-ride="carousel" id="carousel" style="height: 100%;" data-bs-interval="2000" data-bs-pause="hover">
                 <div class="carousel-indicators">
                     <button data-bs-target="#carousel" data-bs-slide-to="0" type="button" class="active"></button>
                     <button data-bs-target="#carousel" data-bs-slide-to="1" type="button"></button>
                     <button data-bs-target="#carousel" data-bs-slide-to="2" type="button"></button>
+                    <button data-bs-target="#carousel" data-bs-slide-to="3" type="button"></button>
                 </div>
                 <div class="carousel-inner p-0" style="height: 100%;">
                     <div class="carousel-item active">
-                        <img src="./static/images/banner_1.png" width="100%" height="100%">
+                        <img src="./static/images/eminent/care1.JPG" width="100%" height="100%">
                     </div>
                     <div class="carousel-item">
-                        <img src="./static/images/poster.png" width="100%" height="100%">
+                        <img src="./static/images/eminent/IMG_20240113_153803.jpg" width="100%" height="100%">
                     </div>
                     <div class="carousel-item">
-                        <img src="./static/images/20230323_023804_0000.png" width="100%" height="100%">
+                        <img src="./static/images/eminent/op2.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./static/images/eminent/day4.png" width="100%" height="100%">
                     </div>
                     <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel">
                         <span class="carousel-control-prev-icon"></span>
@@ -299,9 +343,48 @@
         </div>
     </div>
 
+    <!-- Eminent Personalities -->
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <center><h1 class="font-3 fadein">Eminent Personalities</h1></center>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-12 d-md-flex px-md-4 py-md-4 py-3 eminent-row fadein">
+                <div class="col-md-7 px-md-4 py-2">
+                    <img src="./static/images/eminent/venky.JPG" width="100%" height="100%" style="object-fit: contain;">
+                </div>
+                <div class="col-md-5 px-md-4 py-md-2">
+                    <b class="font-4 font-x-large">Shri M. Venkaiah Naidu</b><br>
+                    <b class="font-4 font-normal text-gray">Former Vice President of India</b>
+                    <p class="font-4 mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero eos quam sequi quos aliquid culpa blanditiis est eaque recusandae? Officia saepe cum architecto ea neque, soluta nostrum placeat tenetur nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestias magnam perferendis quisquam quo, accusamus vel nesciunt dolorem dolores beatae officiis eveniet? Ullam repellat nostrum ex minus, dolores facilis aut.</p>
+                </div>
+            </div>
+            <div class="col-md-12 d-md-flex px-md-4 py-md-4 py-3 eminent-row fadein">
+                <div class="col-md-7 px-md-4 py-2">
+                    <img src="./static/images/eminent/balu.JPG" width="100%" height="100%" style="object-fit: contain;">
+                </div>
+                <div class="col-md-5 px-md-4 py-md-2">
+                    <b class="font-4 font-x-large">Padma Bhushan Shri S. P. Balasubrahmanyam</b><br>
+                    <b class="font-4 font-normal text-gray">Indian Playback Singer</b>
+                    <p class="font-4 mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero eos quam sequi quos aliquid culpa blanditiis est eaque recusandae? Officia saepe cum architecto ea neque, soluta nostrum placeat tenetur nisi.</p>
+                </div>
+            </div>
+            <div class="col-md-12 d-md-flex px-md-4 py-md-4 py-3 eminent-row fadein">
+                <div class="col-md-7 px-md-4 py-2">
+                    <img src="./static/images/eminent/omkar.JPG" width="100%" height="100%" style="object-fit: contain;">
+                </div>
+                <div class="col-md-5 px-md-4 py-md-2">
+                    <b class="font-4 font-x-large">Yogaratna Dr. S. N. Omkar</b><br>
+                    <b class="font-4 font-normal text-gray">Chief Research Scientist, Department of Aerospace Engineering, IISc., Bengaluru</b>
+                    <p class="font-4 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nesciunt sit debitis corporis dicta totam, exercitationem molestias neque ipsa animi accusamus, ipsum labore, soluta provident id reiciendis alias. Doloribus, assumenda. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero eos quam sequi quos aliquid culpa blanditiis est eaque recusandae? Officia saepe cum architecto ea neque, soluta nostrum placeat tenetur nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestias magnam perferendis quisquam quo, accusamus vel nesciunt dolorem dolores beatae officiis eveniet? Ullam repellat nostrum ex minus, dolores facilis aut.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Achievements -->
     <div class="container-fluid column-flex">
-        <div class="row mb-2">
+        <div class="row mb-2 mt-3">
             <center><h1 class="font-3 fadein">Achievements</h1></center>
         </div>
         <div class="row pb-2 row-flex medal-background fadein">
@@ -419,53 +502,53 @@
             <center><h1 class="font-3 fadein">Performances</h1></center>
         </div>
         <div class="row">
-            <div class="col-md-12 d-md-flex evenly main-mobile">
+            <div class="col-md-12 mt-md-2 d-md-flex evenly main-mobile">
                 <div class="col-md-4 border rounded shadow bg-light mobile-block fadein" style="width: 30%;">
                     <div class="col-md-11 rounded" style="position: relative; top:-25px; margin:auto; margin-bottom:-10px">
-                        <img src="./static/performances/IMG_20240113_153803.jpg" width="100%" height="200" class="rounded">
+                        <img src="./static/images/performances/IMG_20240113_153803.jpg" width="100%" height="200" class="rounded bg-light">
                     </div>
-                    <div class="col-md-12 px-3 pb-4">
+                    <div class="col-md-12 px-md-3 px-2 pb-md-4">
                         <b class="font-4"><span>All India Inter University Yoga Championship</span></b>
                         <hr>
-                        <span class="font-4 font-small text-gray smaller"><span><i class="fa fa-calendar" aria-hidden="true"></i> 16 January, 2017</span></span><br>
-                        <span class="font-4 font-small text-gray smaller"><span><i class="fa fa-map-marker" aria-hidden="true"></i> Vijayawada</span></span><br>
-                        <span class="font-4 font-small text-gray smaller"><span><i class="fa-solid fa-eye"></i> 1000 Members</span></span><br>
-                        <p class="font-4 font-smaller my-2 mb-0 text-justify" style="height: 60px; overflow:hidden">Lorem VGHB ipsum dolor sit amet consectetur adipisicing elit.gvoeuhdbeu iuhe iurh ueih ruieh ruiegh riugh efbuirgf beurigbf euirgfb euirgb feyrb eyrb yevb rty Tempore illum dicta quibusdam, repellendus veritatis eos ducimus possimus corporis nulla in veniam accusamus.</p>
-                        <p class="font-4 font-smaller text-right"><a href="#" class="text-decoration-none" style="position: absolute;bottom:2.5%; right:4%; width:100%">View more</a></p>
+                        <span class="font-4 text-gray smaller mt-2"><span><i class="fa fa-calendar" aria-hidden="true"></i></span> 16 January, 2017</span>
+                        <span class="font-4 text-gray smaller"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>&nbsp; Vijayawada</span>
+                        <span class="font-4 text-gray smaller"><span><i class="fa-solid fa-eye"></i></span> 1000 Viewers</span>
+                        <p class="font-4 font-smaller my-2 mb-0 text-justify" style="height: 75px; overflow:hidden;line-height:18px;">Lorem VGHB ipsum dolor sit amet consectetur adipisicing elit.gvoeuhdbeu iuhe iurh ueih ruieh ruiegh riugh efbuirgf beurigbf euirgfb euirgb feyrb eyrb yevb rty Tempore illum dicta quibusdam, repellendus veritatis eos ducimus possimus corporis nulla in veniam accusamus.</p>
+                        <p class="font-4 font-smaller text-right"><span style="position: absolute;bottom:2.5%; right:4%; width:100%"><a href="./performance.html" class="text-decoration-none">View more</a></span></p>
                     </div>
                 </div>
                 <div class="col-md-4 border rounded shadow bg-light mobile-block fadein" style="width: 30%;">
                     <div class="col-md-11 rounded" style="position: relative; top:-25px; margin:auto; margin-bottom:-10px">
-                        <img src="./static/performances/IMG_20240113_203033.jpg" width="100%" height="200" class="rounded">
+                        <img src="./static/images/performances/IMG_20240113_153803.jpg" width="100%" height="200" class="rounded  bg-light">
                     </div>
-                    <div class="col-md-12 px-3">
+                    <div class="col-md-12 px-md-3 px-2 pb-md-4">
                         <b class="font-4"><span>Ugadi Milan Celebrations</span></b>
                         <hr>
-                        <span class="font-4 font-small text-gray smaller"><span><i class="fa fa-calendar" aria-hidden="true"></i> 16 March, 2019</span></span><br>
-                        <span class="font-4 font-small text-gray smaller"><span><i class="fa fa-map-marker" aria-hidden="true"></i> New Delhi</span></span><br>
-                        <span class="font-4 font-small text-gray smaller"><span><i class="fa-solid fa-eye"></i> 600 Members</span></span><br>
-                        <p class="font-4 font-smaller my-2 mb-0 text-justify" style="height: 60px; overflow:hidden">Lorem VGHB ipsum dolor sit amet consectetur adipisicing elit. Tempore illum dicta quibusdam, repellendus veritatis eos ducimus possimus corporis nulla in veniam accusamus.</p>
-                        <p class="font-4 font-smaller text-right"><a href="#" class="text-decoration-none" style="position: absolute;bottom:2.5%; right:4%; width:100%">View more</a></p>
+                        <span class="font-4 text-gray smaller mt-2"><span><i class="fa fa-calendar" aria-hidden="true"></i></span> 16 January, 2017</span>
+                        <span class="font-4 text-gray smaller"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>&nbsp; New Delhi</span>
+                        <span class="font-4 text-gray smaller"><span><i class="fa-solid fa-eye"></i></span> 600 Viewers</span>
+                        <p class="font-4 font-smaller my-2 mb-0 text-justify" style="height: 75px; overflow:hidden;line-height:18px;">Lorem VGHB ipsum dolor sit amet consectetur adipisicing elit. Tempore illum dicta quibusdam, repellendus veritatis eos ducimus possimus corporis nulla in veniam accusamus.</p>
+                        <p class="font-4 font-smaller text-right"><span style="position: absolute;bottom:2.5%; right:4%; width:100%"><a href="./performance.html" class="text-decoration-none">View more</a></span></p>
                     </div>
                 </div>
                 <div class="col-md-4 border rounded shadow bg-light mobile-block fadein" style="width: 30%;">
                     <div class="col-md-11 rounded" style="position: relative; top:-25px; margin:auto; margin-bottom:-10px">
-                        <img src="./static/performances/IMG_20240113_142736.jpg" width="100%" height="200" class="rounded">
+                        <img src="./static/performances/IMG_20240113_142736.jpg" width="100%" height="200" class="rounded  bg-light">
                     </div>
-                    <div class="col-md-12 px-3">
+                    <div class="col-md-12 px-md-3 px-2 pb-md-4">
                         <b class="font-4"><span>RGUKT Chancellor Visit</span></b>
                         <hr>
-                        <span class="font-4 font-small text-gray smaller"><span><i class="fa fa-calendar" aria-hidden="true"></i> 28 November, 2011</span></span><br>
-                        <span class="font-4 font-small text-gray smaller"><span><i class="fa fa-map-marker" aria-hidden="true"></i> RGUKT Yogasala</span></span><br>
-                        <span class="font-4 font-small text-gray smaller"><span><i class="fa-solid fa-eye"></i> 500 Members</span></span><br>
-                        <p class="font-4 font-smaller my-2 mb-0 text-justify" style="height: 60px; overflow:hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat temporibus reprehenderit est qui. Molestias quis nam dicta minus eaque, vitae adipisci ut doloremque reprehenderit exercitationem, repellendus iste neque quaerat maiores!</p>
-                        <p class="font-4 font-smaller text-right"><a href="#" class="text-decoration-none" style="position: absolute;bottom:2.5%; right:4%; width:100%">View more</a></p>
+                        <span class="font-4 text-gray smaller mt-2"><span><i class="fa fa-calendar" aria-hidden="true"></i></span> 16 January, 2017</span>
+                        <span class="font-4 text-gray smaller"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>&nbsp; Yogasala RGUKT Nuzvid</span>
+                        <span class="font-4 text-gray smaller"><span><i class="fa-solid fa-eye"></i></span> 1000 Viewers</span>
+                        <p class="font-4 font-smaller my-2 mb-0 text-justify" style="height: 75px; overflow:hidden;line-height:18px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat temporibus reprehenderit est qui. Molestias quis nam dicta minus eaque, vitae adipisci ut doloremque reprehenderit exercitationem, repellendus iste neque quaerat maiores!</p>
+                        <p class="font-4 font-smaller text-right"><span style="position: absolute;bottom:2.5%; right:4%; width:100%"><a href="./performance.html" class="text-decoration-none">View more</a></span></p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row px-3 pt-4 pb-3">
-            <a href="./performances.html" class="btn btn-font-4 fadein mt-md-2 bg-success" style="background-color:#008175;border:none;outline:none;color:white;">View All Performances</a>
+        <div class="row d-flex justify-content-center pb-3 pt-4">
+            <center><a href="./performances.html" class="btn py-2 font-4 view-all fadein mt-md-2 bg-success" style="background-color:#008175;border:none;outline:none;color:white;">View All Performances</a></center>
         </div>
     </div>
 
@@ -478,7 +561,7 @@
             <?php include 'swiper.html' ?>
         </div>
         <div class="row d-flex justify-content-center">
-            <center><a href="" class="btn my-4 py-2 font-4 view-all fadein" style="border:1px solid brown;background:linear-gradient(To Top,#ffb669,#f68207);color:brown;">View More</a></center>
+            <center><a href="./testimonials.html" class="btn my-4 py-2 font-4 view-all fadein" style="border:1px solid brown;background:linear-gradient(To Top,#ffb669,#f68207);color:brown;border-radius:50px;">View More</a></center>
         </div>
     </div>
 
@@ -487,56 +570,56 @@
         <div class="row fadein">
             <center><h1 class="font-3 fadein">Webinars and Workshops</h1></center>
         </div>
-        <div class="row px-md-5 py-3 fadein">
+        <div class="row px-md-5 py-3">
             <div class="col-md-12 webinars d-flex flex-column flex-sm-row justify-content-around">
-                <div class="webinar border rounded shadow bg-light" style="position: relative;">
+                <div class="webinar border rounded shadow bg-light fadein" style="position: relative;">
                     <div class="webinar-image">
-                        <img src="./static/images/webinars/" width="100%" height="100%" style="border-radius: 5px 5px 0px 0px;">
+                        <img src="./static/images/webinars/astanga_yogaa.png" width="100%" height="100%" class="image-fluid" style="border-radius: 5px 5px 0px 0px;">
                     </div>
                     <div class="webinar-content">
-                        <div class="webinar-title mt-3 px-3">
+                        <div class="webinar-title mt-3 px-md-3 px-2">
                             <b class="font-4">Heading 1</b>
                         </div>
                         <hr>
-                        <div class="webinar-description mb-5">
-                            <span class="font-4 font-small text-gray smaller px-3"><span><i class="fa fa-calendar" aria-hidden="true"></i> 16 January, 2017</span></span><br>
-                            <span class="font-4 font-small text-gray smaller px-3"><span><i class="fa fa-users" aria-hidden="true"></i> 1000 Members</span></span><br>
+                        <div class="webinar-description mb-5 mt-2 px-md-3 px-2">
+                            <span class="font-4 text-gray smaller"><span><i class="fa fa-calendar" aria-hidden="true"></i> 16 January, 2017</span></span>
+                            <span class="font-4 text-gray smaller"><span><i class="fa fa-users" aria-hidden="true"></i> 1000 Registered</span></span>
                         </div>
                     </div>
                     <div class="webinar-button mt-3" style="position: absolute;bottom:0px; width:100%">
                         <a href="./webinar.html" class="registered-btn btn font-4" style="background-color:#f68207;color:white">Register</a>
                     </div>
                 </div>
-                <div class="webinar border rounded shadow bg-light" style="position: relative;">
+                <div class="webinar border rounded shadow bg-light fadein" style="position: relative;">
                     <div class="webinar-image">
-                        <img src="./static/images/webinars/" width="100%" height="100%" style="border-radius: 5px 5px 0px 0px;">
+                        <img src="./static/images/outreach/op2.jpg" width="100%" height="100%" class="image-fluid" style="border-radius: 5px 5px 0px 0px;">
                     </div>
                     <div class="webinar-content">
-                        <div class="webinar-title mt-3 px-3">
+                        <div class="webinar-title mt-3 px-md-3 px-2">
                             <b class="font-4">Heading 2</b>
                         </div>
                         <hr>
-                        <div class="webinar-description mb-5">
-                            <span class="font-4 font-small text-gray smaller px-3"><span><i class="fa fa-calendar" aria-hidden="true"></i> 16 January, 2017</span></span><br>
-                            <span class="font-4 font-small text-gray smaller px-3"><span><i class="fa fa-users" aria-hidden="true"></i> 1000 Members</span></span><br>
+                        <div class="webinar-description mb-5 mt-2 px-md-3 px-2">
+                            <span class="font-4 text-gray smaller"><span><i class="fa fa-calendar" aria-hidden="true"></i> 16 January, 2017</span></span>
+                            <span class="font-4 text-gray smaller"><span><i class="fa fa-users" aria-hidden="true"></i> 1000 Registered</span></span>
                         </div>
                     </div>
                     <div class="webinar-button mt-3" style="position: absolute;bottom:0px; width:100%">
                         <a href="" class="completed-btn btn font-4" style="background-color:#008175;color:white">View Recordings</a>
                     </div>
                 </div>
-                <div class="webinar border rounded shadow bg-light" style="position: relative;">
+                <div class="webinar border rounded shadow bg-light fadein" style="position: relative;">
                     <div class="webinar-image">
-                        <img src="./static/images/webinars/" width="100%" height="100%" style="border-radius: 5px 5px 0px 0px;">
+                        <img src="./static/images/webinars/" width="100%" height="100%" class="image-fluid" style="border-radius: 5px 5px 0px 0px;">
                     </div>
                     <div class="webinar-content">
-                        <div class="webinar-title mt-3 px-3">
+                        <div class="webinar-title mt-3 px-md-3 px-2">
                             <b class="font-4">Heading 3</b>
                         </div>
                         <hr>
-                        <div class="webinar-description mb-5">
-                            <span class="font-4 font-small text-gray smaller px-3"><span><i class="fa fa-calendar" aria-hidden="true"></i> 16 January, 2017</span></span><br>
-                            <span class="font-4 font-small text-gray smaller px-3"><span><i class="fa fa-users" aria-hidden="true"></i> 1000 Members</span></span><br>
+                        <div class="webinar-description mb-5 mt-2 px-md-3 px-2">
+                            <span class="font-4 text-gray smaller"><span><i class="fa fa-calendar" aria-hidden="true"></i> 16 January, 2017</span></span>
+                            <span class="font-4 text-gray smaller"><span><i class="fa fa-users" aria-hidden="true"></i> 1000 Registered</span></span>
                         </div>
                     </div>
                     <div class="webinar-button mt-3" style="position: absolute;bottom:0px; width:100%">
@@ -546,7 +629,63 @@
             </div>
         </div>
         <div class="row d-flex justify-content-center">
-            <center><a href="" class="btn my-4 py-2 font-4 view-all fadein" style="border:1px solid #00423c;background:linear-gradient(to top,#008174ab,#008175);color:white;border-radius:0px">View More</a></center>
+            <center><a href="./webinars.html" class="btn my-3 py-2 font-4 view-all fadein" style="border:1px solid #00423c;background:linear-gradient(to top,#008174ab,#008175);color:white;border-radius:0px">View More</a></center>
+        </div>
+    </div>
+
+    <!-- Outreach Programs -->
+    <div class="container-fluid my-5">
+        <div class="row fadein">
+            <center><h1 class="font-3 fadein">Outreach Programs</h1></center>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-sm-flex p-1 px-sm-5 mt-md-1">
+                <div class="col-md-4 col-sm-6 d-md-flex outreach-image-block px-md-4 p-2 my-2 my-md-0 fadein">
+                    <div class="col-md-12 outreach-image shadow" style="background: url(./static/images/outreach/op1.jpg);background-size:100% 100%;object-fit:cover;">
+                        <div class="col-md-12 outreach-content pb-md-3">
+                            <div class="col-md-12 outreach-title d-flex justify-content-center align-items-center px-3">
+                                <center><b class="font-4 font-small">Organized Online National Webinar on “Yoga In &amp; As Sports” with the Chief Guest Yoga Ratna, Dr.S.N. Omkar, Chief Researcher Scientist, IISC Bangalore &amp; the Guest of Honour is Dr. Jaideep Arya, Secretary General, NYSF on the Occasion of National Teacher’s Day. 300 characters</b></center>
+                            </div>
+                            <div class="col-md-12 outreach-info px-3">
+                                <span class="font-4 text-warning smaller"><span><i class="fa fa-calendar" aria-hidden="true"></i></span> 16 January, 2017</span>
+                                <span class="font-4 text-warning smaller"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>&nbsp; Vijayawada</span>
+                                <span class="font-4 text-warning smaller"><span><i class="fa-solid fa-users"></i></span> 1000 Viewers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 d-md-flex outreach-image-block px-md-4 p-2 my-2 my-md-0 fadein">
+                    <div class="col-md-12 outreach-image shadow" style="background: url(./static/images/outreach/op2.jpg);background-size:100% 100%;object-fit:cover;">
+                        <div class="col-md-12 outreach-content pb-md-3">
+                            <div class="col-md-12 outreach-title d-flex justify-content-center align-items-center px-3">
+                                <center><b class="font-4 font-small">Organized an innovative programme called “Student Upliftment and Rejuvenation through Yoga” (SURYA) By Yoga Ratna, Dr. S. N. Omkar, Chief Researcher Scientist, IISc., Bangalore and Yoga Coach for Indian Cricket Team</b></center>
+                            </div>
+                            <div class="col-md-12 outreach-info px-3">
+                                <span class="font-4 text-warning smaller"><span><i class="fa fa-calendar" aria-hidden="true"></i></span> 16 January, 2017</span>
+                                <span class="font-4 text-warning smaller"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>&nbsp; Vijayawada</span>
+                                <span class="font-4 text-warning smaller"><span><i class="fa-solid fa-users"></i></span> 1000 Viewers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 d-md-flex outreach-image-block px-md-4 p-2 my-2 my-md-0 fadein">
+                    <div class="col-md-12 outreach-image shadow" style="background: url(./static/images/webinars/astanga_yoga.png);background-size:100% 100%;object-fit:cover;">
+                        <div class="col-md-12 outreach-content pb-md-3">
+                            <div class="col-md-12 outreach-title d-flex justify-content-center align-items-center px-3">
+                                <center><b class="font-4 font-small">Organized Online National Webinar on “Yoga In &amp; As Sports” with the Chief Guest Yoga Ratna, Dr.S.N. Omkar, Chief Researcher Scientist, IISC Bangalore &amp; the Guest of Honour is Dr. Jaideep Arya, Secretary General, NYSF on the Occasion of National Teacher’s Day. Dr. Jaideep Arya, Secretary General, NYSF on the Occasion of National</b></center>
+                            </div>
+                            <div class="col-md-12 outreach-info px-3">
+                                <span class="font-4 text-warning smaller"><span><i class="fa fa-calendar" aria-hidden="true"></i></span> 16 January, 2017</span>
+                                <span class="font-4 text-warning smaller"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>&nbsp; Vijayawada</span>
+                                <span class="font-4 text-warning smaller"><span><i class="fa-solid fa-users"></i></span> 1000 Viewers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-md-2">
+            <center><a href="./outreach_programs.html" class="btn my-3 py-2 font-4 outreach-button view-all fadein" style="border:1px solid #642f00f3;color:#642f00f3;border-radius:0px;background-color:white;">View All Programs</a></center>
         </div>
     </div>
 </body>

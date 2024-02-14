@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title>Yogasala RGUKTN</title>
+    <link rel="icon" href="./static/images/logos/yogasala_logo.png">
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/bootstrap/styles/styles.css">
+    <link rel="stylesheet" href="./static/bootstrap/styles/gallery.css">
+
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium Book Plus">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Expletus Sans">
+
+    <style>
+        body{
+            scroll-behavior: smooth;
+        }
+        ::selection{
+            user-select: none;
+        }
+        ::-webkit-scrollbar{
+            width: 5px;
+            background-color: transparent;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: lightgray;
+            border-radius: 50px;
+        }
+        .performance-image{
+            width: 100%;
+            height:200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .performance-image img:hover{
+            opacity:0.6;
+        }
+        .performance-image img{
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+        }
+        .performance-button{
+            background: none;
+            outline: none;
+            border: none;
+            padding:0;
+        }
+        @media screen and (max-width:520px){
+            .performance-image{
+                height: 100px !important;
+            }
+            .performance-image img{
+                box-shadow: none !important;
+            }
+            .performance-image-div{
+                padding: 2px !important;
+            }
+
+        }
+        @media screen and (min-width:950px){
+            .performance-main-image{
+                height: 390px !important;
+            }
+            .img-image{
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: fill;
+            }
+        }
+    </style>
+</head>
+<body style="background-color:papayawhip">
+    <?php include 'navbar.php' ?>
+    <div class="container-fluid py-2 py-md-4">
+        <div class="row p-2 px-sm-3">
+            <div class="col-md-12 p-0 border rounded d-md-flex justify-content-between bg-white" style="position: relative;">
+                <div class="col-md-7 col-sm-12 p-sm-3 p-2 performance-main-image">
+                    <img src="./static/images/performances/IMG_20240113_153803.jpg" width="100%" class="img-image img-fluid">
+                </div>
+                <div class="col-md-5 col-sm-12 p-sm-3 p-2 m-0 d-flex flex-column justify-content-between">
+                    <div class="">
+                        <div class="performance-title">
+                            <b class="font-4 font-larger">All India Inter University Yoga Championship 415 characters</b>
+                            <hr>
+                        </div>
+                        <div class="performance-info mt-2">
+                            <span class="font-4 smaller text-gray"><span><i class="fa fa-calendar" aria-hidden="true"></i></span><b> 16 January, 2017</b></span>
+                            <span class="font-4 smaller text-gray"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span><b>&nbsp; Vijayawada</b></span>
+                            <span class="font-4 smaller text-gray"><span><i class="fa-solid fa-eye" aria-hidden="true"></i></span><b> 1000 Members</b></span>
+                        </div>
+                        <div class="performance-description-head mt-3">
+                            <b><span class="font-4">Description:</span></b>
+                        </div>
+                        <div class="performance-description mt-2">
+                            <p class="font-4 font-smaller text-justify mb-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo et obcaecati, adipisci cupiditate autem dolor vero! Voluptate nostrum delectus, culpa laudantium placeat nisi omnis et repudiandae officiis accusantium. Unde, nobis?</p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end">
+                        <a href="" class="col-sm-4 col-12 btn btn-success">Watch Event</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row px-md-4 px-3 py-0 mt-3">
+            <p class="p-0 font-4 m-0 bold"><b>Images</b></p>
+        </div>
+        <hr>
+        <div class="row px-md-4 py-2 px-2 px-md-0">
+            <div class="col-md-2 col-sm-3 col-3 performance-image-div p-2 d-flex flex-column fadein">
+                <button class="performance-button img-modal-button" value="./static/images/performances/IMG_20240113_153803.jpg">
+                    <div class="performance-image rounded">
+                        <img src="./static/images/performances/IMG_20240113_153803.jpg" class="shadow rounded">
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3 performance-image-div p-2 d-flex flex-column fadein">
+                <button class="performance-button img-modal-button" value="./static/images/ganesh.jpg">
+                    <div class="performance-image rounded">
+                        <img src="./static/images/ganesh.jpg" class="shadow rounded">
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3 performance-image-div p-2 d-flex flex-column fadein">
+                <button class="performance-button img-modal-button" value="./static/images/performances/IMG_20240113_142736.jpg">
+                    <div class="performance-image rounded">
+                        <img src="./static/images/performances/IMG_20240113_142736.jpg" class="shadow rounded">
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3 performance-image-div p-2 d-flex flex-column fadein">
+                <button class="performance-button img-modal-button" value="./static/images/webinars/astanga_yoga.png">
+                    <div class="performance-image rounded">
+                        <img src="./static/images/webinars/astanga_yoga.png" class="shadow rounded">
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3 performance-image-div p-2 d-flex flex-column fadein">
+                <button class="performance-button img-modal-button" value="./static/images/performances/IMG_20240113_210224.jpg">
+                    <div class="performance-image rounded">
+                        <img src="./static/images/performances/IMG_20240113_210224.jpg" class="shadow rounded">
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3 performance-image-div p-2 d-flex flex-column fadein">
+                <button class="performance-button img-modal-button" value="./static/images/ganesh.jpg">
+                    <div class="performance-image rounded">
+                        <img src="./static/images/ganesh.jpg" class="shadow rounded">
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3 performance-image-div p-2 d-flex flex-column fadein">
+                <button class="performance-button img-modal-button" value="./static/images/ganesh.jpg">
+                    <div class="performance-image rounded">
+                        <img src="./static/images/ganesh.jpg" class="shadow rounded">
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3 performance-image-div p-2 d-flex flex-column fadein">
+                <button class="performance-button img-modal-button" value="./static/images/ganesh.jpg">
+                    <div class="performance-image rounded">
+                        <img src="./static/images/ganesh.jpg" class="shadow rounded">
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3 performance-image-div p-2 d-flex flex-column fadein">
+                <button class="performance-button img-modal-button" value="./static/images/ganesh.jpg">
+                    <div class="performance-image rounded">
+                        <img src="./static/images/ganesh.jpg" class="shadow rounded">
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3 performance-image-div p-2 d-flex flex-column fadein">
+                <button class="performance-button img-modal-button" value="./static/images/ganesh.jpg">
+                    <div class="performance-image rounded">
+                        <img src="./static/images/ganesh.jpg" class="shadow rounded">
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3 performance-image-div p-2 d-flex flex-column fadein">
+                <button class="performance-button img-modal-button" value="./static/images/ganesh.jpg">
+                    <div class="performance-image rounded">
+                        <img src="./static/images/ganesh.jpg" class="shadow rounded">
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3 performance-image-div p-2 d-flex flex-column fadein">
+                <button class="performance-button img-modal-button" value="./static/images/ganesh.jpg">
+                    <div class="performance-image rounded">
+                        <img src="./static/images/ganesh.jpg" class="shadow rounded">
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3 performance-image-div p-2 d-flex flex-column fadein">
+                <button class="performance-button img-modal-button" value="./static/images/ganesh.jpg">
+                    <div class="performance-image rounded">
+                        <img src="./static/images/ganesh.jpg" class="shadow rounded">
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-2 col-sm-3 col-3 performance-image-div p-2 d-flex flex-column fadein">
+                <button class="performance-button img-modal-button" value="./static/images/ganesh.jpg">
+                    <div class="performance-image rounded">
+                        <img src="./static/images/ganesh.jpg" class="shadow rounded">
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <div class="modal-container align-items-md-start" id="img-modal-container">
+            <div class="close" id="img-close">&times;</div>
+            <div class="modal-box mt-md-4">
+                <img class="modal-image" id="image">
+            </div>
+            <div class="image-index">
+                <b class="font-4" id="image-index-number"></b>
+            </div>
+            <div class="modal-prev">
+                <i class="fa fa-angle-left modal-prev-icon"></i>
+            </div>
+            <div class="modal-next">
+                <i class="fa fa-angle-right modal-next-icon"></i>
+            </div>
+        </div>
+    </div>
+    <script src="./static/bootstrap/jquery.js"></script>
+    <script src="./static/bootstrap/scripts/script.js"></script>
+    <script src="./static/bootstrap/scripts/gallery.js"></script>
+    <script src="https://kit.fontawesome.com/0d9019f3e0.js" crossorigin="anonymous"></script>
+</body>
+</html>
