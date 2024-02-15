@@ -19,20 +19,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Expletus Sans">
 
     <style>
-        body{
-            scroll-behavior: smooth;
-        }
-        ::selection{
-            user-select: none;
-        }
-        ::-webkit-scrollbar{
-            width: 5px;
-            background-color: transparent;
-        }
-        ::-webkit-scrollbar-thumb{
-            background-color: lightgray;
-            border-radius: 50px;
-        }
         .outreach-image{
             height: 250px !important;
         }

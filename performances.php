@@ -18,20 +18,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium Book Plus">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Expletus Sans">
     <style>
-        body{
-            scroll-behavior: smooth;
-        }
-        ::selection{
-            user-select: none;
-        }
-        ::-webkit-scrollbar{
-            width: 5px;
-            background-color: transparent;
-        }
-        ::-webkit-scrollbar-thumb{
-            background-color: lightgray;
-            border-radius: 50px;
-        }
         @media screen and (min-width:520px) {
             .performance-card{
                 width: 47.5%;

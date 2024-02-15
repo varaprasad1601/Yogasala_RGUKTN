@@ -1,3 +1,19 @@
+body{
+    scroll-behavior: smooth;
+}
+::selection{
+    user-select: none;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: lightgray;
+    border-radius: 50px;
+}
+
+
 /* Font Styles */
 .font-1, .btn-font-1{
     font-family: 'Expletus Sans' !important;
@@ -169,8 +185,6 @@ iframe{
 
 
 
-
-
 .view-all{
     outline:none;
     width:40%;
@@ -183,6 +197,106 @@ iframe{
 .head-border-left{
     border-left: 5px solid maroon;
 }
+
+
+/* flip card */
+.flip-front{
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100% !important;
+    transition: 0.2s;
+}
+.flip-back{
+    width: 100% !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    transition: 0.2s ease;
+}
+.visitor-info{
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100% !important;
+    height: 80% !important;
+    background-color: whitesmoke;
+}
+.visiting-date{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.flip-card:hover .flip-front{
+    cursor:grab;
+    transform: rotateY(180deg);
+    background: white !important;
+}
+
+.flip-card:hover .flip-back{
+    opacity: 1;
+    transform: rotateY(180deg);
+}
+
+
+
+/* grid */
+.grid-container{
+    display: grid !important;
+    grid-template-columns: repeat(4,minmax(50px, 1fr)) !important;
+    grid-gap: 15px;
+    column-gap: 30px;
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense !important;
+}
+.grid-div{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+.grid-image{
+    width: 100%;
+    height: 100%;
+    object-fit: fill !important;
+    cursor: pointer;
+}
+.article-pin{
+    width: 20px;
+    position: absolute;
+    top: -20px !important;
+}
+
+
+.wide{
+    grid-column: span 2;
+}
+.tall{
+    grid-row: span 2;
+}
+.x-wide{
+    grid-column: span 3;
+}
+.x-tall{
+    grid-row: span 3;
+}
+.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.x-big{
+    grid-column: span 3;
+    grid-row: span 3;
+}
+
+
 
 
 /* Media Queries */
@@ -216,6 +330,11 @@ iframe{
         padding-bottom: 75px !important;
         margin: 0px 50px !important;
         width:15% !important;
+    }
+    .grid-container{
+        grid-template-columns: repeat(4,minmax(50px, 1fr)) !important;
+        grid-gap: 5px;
+        grid-auto-rows: 75px;
     }
 }
 

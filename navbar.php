@@ -11,9 +11,6 @@
             width: 100px;
             text-align: center;
         }
-        ::selection{
-            user-select: none;
-        }
         .navbar-sticky{
             position: -webkit-sticky !important;
             position: sticky !important;

@@ -22,22 +22,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Expletus Sans">
 
     <style>
-        body{
-            scroll-behavior: smooth;
-        }
-        ::-webkit-scrollbar{
-            width: 5px;
-            background-color: transparent;
-        }
-        ::-webkit-scrollbar-thumb{
-            background-color: lightgray;
-            border-radius: 50px;
-        }
-        .webinar-video-button{
-            background: none;
-            outline: none;
-            border: none;
-        }
         .webinar-video{
             width: 100%;
             height:170px;
