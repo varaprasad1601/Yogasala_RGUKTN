@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title>Yogasala RGUKTN</title>
+    <link rel="icon" href="./static/images/logos/yogasala_logo.png">
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/bootstrap/styles/styles.css">
+    <link rel="stylesheet" href="./static/bootstrap/styles/gallery.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium Book Plus">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Expletus Sans">
+</head>
+<body>
+    <?php include 'navbar.php' ?>
+    <div class="container-fluid px-md-5 mb-5">
+        <div class="row px-sm-3 px-2 py-3 my-md-4 mb-4">
+            <h2 class="p-0 font-4 m-0 p-2 head-border-left"><b>All Articles</b></h2>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="grid-container px-1">
+                    <div class="grid-div tall mb-md-5 mb-3">
+                        <img src="./static/images/articles/big.jpg" class="grid-image border shadow img-modal-button" title="Click to Maximize">
+                        <img src="./static/bootstrap/icons/pin.png" class="article-pin">
+                    </div>
+                    <div class="grid-div tall mb-md-5 mb-3">
+                        <img src="./static/images/articles/tall.jpg" class="grid-image border shadow img-modal-button" title="Click to Maximize">
+                        <img src="./static/bootstrap/icons/pin.png" class="article-pin">
+                    </div>
+                    <div class="grid-div big mb-md-5 mb-3">
+                        <img src="./static/images/articles/wide.jpg" class="grid-image border shadow img-modal-button" title="Click to Maximize">
+                        <img src="./static/bootstrap/icons/pin.png" class="article-pin">
+                    </div>
+                    <div class="grid-div big mb-md-5 mb-3">
+                        <img src="./static/images/articles/big2.jpg" class="grid-image border shadow img-modal-button" title="Click to Maximize">
+                        <img src="./static/bootstrap/icons/pin.png" class="article-pin">
+                    </div>
+                    <div class="grid-div tall mb-md-5 mb-3">
+                        <img src="./static/images/articles/tall.jpg" class="grid-image border shadow img-modal-button" title="Click to Maximize">
+                        <img src="./static/bootstrap/icons/pin.png" class="article-pin">
+                    </div>
+                    <div class="grid-div tall mb-md-5 mb-3">
+                        <img src="./static/images/articles/big.jpg" class="grid-image border shadow img-modal-button" title="Click to Maximize">
+                        <img src="./static/bootstrap/icons/pin.png" class="article-pin">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-container align-items-md-start" id="img-modal-container">
+            <div class="close" id="img-close">&times;</div>
+            <div class="modal-box mt-md-4">
+                <img class="modal-image" id="image">
+            </div>
+            <div class="image-index">
+                <b class="font-4" id="image-index-number"></b>
+            </div>
+            <div class="modal-prev">
+                <i class="fa fa-angle-left modal-prev-icon"></i>
+            </div>
+            <div class="modal-next">
+                <i class="fa fa-angle-right modal-next-icon"></i>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./static/bootstrap/jquery.js"></script>
+<script src="./static/bootstrap/scripts/gallery.js"></script>
+</html>

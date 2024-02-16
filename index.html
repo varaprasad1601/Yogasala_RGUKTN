@@ -158,6 +158,23 @@
             align-items: center;
             justify-content: center;
         }
+        .grid-container{
+            display: grid !important;
+            grid-template-columns: repeat(4,minmax(50px, 1fr)) !important;
+            grid-gap: 15px !important;
+            column-gap: 30px !important;
+            grid-auto-rows: 100px !important;
+        }
+        .grid-div:hover{
+            transform: translateY(4px) !important;
+        }
+        .article-pin{
+            top: -20px !important;
+            filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.5));
+        }
+        .grid-div:hover .article-pin{
+            transform: translateY(-10px) !important;
+        }
         @keyframes medal-rotation {
             0%{
 
@@ -212,6 +229,12 @@
             }
             .alumni-cards{
                 margin-top: -5px !important;
+            }
+            .grid-container{
+                grid-gap: 15px !important;
+                column-gap: 10px !important;
+                row-gap: 40px !important;
+                grid-auto-rows: 100px !important;
             }
         }
         @media screen and (max-width:520px) {
@@ -291,6 +314,9 @@
             .mobile-block:nth-child(3){
                 display:block !important;
             }
+            .alumni-cards:nth-child(3){
+                display: block !important;
+            }
             .initial-padding{
                 padding: 15px 10px !important;
             }
@@ -324,6 +350,16 @@
             }
             .alumni-cards{
                 margin-top: -5px !important;
+            }
+            .grid-container{
+                grid-gap: 15px !important;
+                column-gap: 5px !important;
+                row-gap: 20px !important;
+                grid-auto-rows: 60px !important;
+            }
+            .article-pin{
+                width: 10px !important;
+                top:-10px !important
             }
         }
     </style>
@@ -742,42 +778,43 @@
     </div>
 
     <!-- News Articles -->
-    <div class="container-fluid my-5 py-3"  style="background: url(https://t4.ftcdn.net/jpg/06/47/15/85/360_F_647158534_uWoJpoWdFN82iLrxqWyxzCpreA4Nj6DN.jpg);background-size:100% 120%; background-position:center;">
-        <div class="row py-3">
+    <div class="container-fluid my-5 py-3"  style="background: url(./static/images/backgrounds/greenboard_by_krunch87_dyzu2-414w-2x.jpg);background-size:100% 135%; background-position:center;">
+    <!-- <div class="container-fluid my-5 py-md-3"> -->
+        <div class="row">
             <center><h1 class="font-3 fadein text-white">News  Articles</h1></center>
         </div>
-        <div class="row">
+        <div class="row my-4">
             <div class="col-md-12 px-md-5 d-flex justify-content-center">
                 <div class="col-md-8 grid-container">
-                    <div class="grid-div tall border shadow">
+                    <div class="grid-div tall border shadow fadein">
                         <img src="./static/images/articles/big.jpg" class="grid-image shadow">
                         <img src="./static/bootstrap/icons/pin.png" class="article-pin">
                     </div>
-                    <div class="grid-div big border shadow">
+                    <div class="grid-div big border shadow fadein">
                         <img src="./static/images/articles/big2.jpg" class="grid-image shadow">
                         <img src="./static/bootstrap/icons/pin.png" class="article-pin">
                     </div>
-                    <div class="grid-div tall border shadow">
+                    <div class="grid-div tall border shadow fadein">
                         <img src="./static/images/articles/tall.jpg" class="grid-image shadow">
                         <img src="./static/bootstrap/icons/pin.png" class="article-pin">
                     </div>
-                    <div class="grid-div big border shadow">
+                    <div class="grid-div big border shadow fadein">
                         <img src="./static/images/articles/wide.jpg" class="grid-image shadow">
                         <img src="./static/bootstrap/icons/pin.png" class="article-pin">
                     </div>
-                    <div class="grid-div tall border shadow">
+                    <div class="grid-div tall border shadow fadein">
                         <img src="./static/images/articles/tall.jpg" class="grid-image shadow">
                         <img src="./static/bootstrap/icons/pin.png" class="article-pin">
                     </div>
-                    <div class="grid-div tall border shadow">
+                    <div class="grid-div tall border shadow fadein">
                         <img src="./static/images/articles/tall.jpg" class="grid-image shadow">
                         <img src="./static/bootstrap/icons/pin.png" class="article-pin">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-center my-3">
-            <center><a href="./articles.html" class="btn my-3 py-2 font-4 view-all fadein" style="border:1px solid rgb(104, 104, 104);color:black;background:linear-gradient(to top,rgb(104, 104, 104),whitesmoke);border-radius:5px;background-color:white;">View All Programs</a></center>
+        <div class="row d-flex justify-content-center mb-1">
+            <center><a href="./articles.html" class="btn my-2 py-2 font-4 view-all fadein" style="border:1px brown;color:white;background:linear-gradient(to top,brown,burlywood);border-radius:5px;background-color:white;">View All Articles</a></center>
         </div>
     </div>
 
@@ -788,75 +825,70 @@
         </div>
         <div class="row px-md-5">
             <div class="col-md-12 px-md-5 p-3 visitors">
-                <div class="grid-a flip-card fadein">
-                    <div class="flip-front p-0 m-0" style="background: url(./static/images/visit/IMG_20240113_211507.jpg);">
-                        <div class="flip-back border">
-                            <div class="visitor-info px-2">
-                                <b class="font-4">Vasamsetti Sai Siva Sankara Vara Prasad</b>
-                                <b class="font-4 font-small">Software Engineer</b>
-                            </div>
-                            <div class="visiting-date bg-dark">
-                                <b class="font-4 font-small">16 January 2002</b>
-                            </div>
+                <div class="grid-a fadein bg-warning slide-back">
+                    <img src="./static/images/visitors/IMG_20230423_010152.jpg" class="slide-image">
+                    <div class="slide-content p-4">
+                        <div class="slide-name">
+                            <b class="font-4">Vasamsetti Sai Siva Sankara Vara Prasad</b>
+                        </div>
+                        <hr>
+                        <div class="slide-date">
+                            <b class="font-4 font-small">16-01-2002</b>
                         </div>
                     </div>
                 </div>
-                <div class="grid-c flip-card fadein">
-                    <div class="flip-front p-0 m-0" style="background: url(./static/images/visit/IMG_20230423_010152.jpg);">
-                        <div class="flip-back border">
-                            <div class="visitor-info px-2">
-                                <b class="font-4">Vasamsetti Sai Siva Sankara Vara Prasad</b>
-                                <b class="font-4 font-small">Software Engineer</b>
-                            </div>
-                            <div class="visiting-date bg-dark">
-                                <b class="font-4 font-small">16 January 2002</b>
-                            </div>
+                <div class="grid-c fadein bg-warning slide-back">
+                    <img src="./static/images/visitors/IMG_20240113_211507.jpg" class="slide-image">
+                    <div class="slide-content p-4">
+                        <div class="slide-name">
+                            <b class="font-4">Vasamsetti Sai Siva Sankara Vara Prasad</b>
+                        </div>
+                        <hr>
+                        <div class="slide-date">
+                            <b class="font-4 font-small">16-01-2002</b>
                         </div>
                     </div>
                 </div>
-                <div class="grid-d flip-card fadein">
-                    <div class="flip-front p-0 m-0" style="background: url(./static/images/visit/3.jpg);">
-                        <div class="flip-back border">
-                            <div class="visitor-info px-2">
-                                <b class="font-4">Vasamsetti Sai Siva Sankara Vara Prasad</b>
-                                <b class="font-4 font-small">Software Engineer</b>
-                            </div>
-                            <div class="visiting-date bg-dark">
-                                <b class="font-4 font-small">16 January 2002</b>
-                            </div>
+                <div class="grid-d fadein bg-warning slide-back">
+                    <img src="./static/images/visitors/3.jpg" class="slide-image">
+                    <div class="slide-content p-4">
+                        <div class="slide-name">
+                            <b class="font-4">Vasamsetti Sai Siva Sankara Vara Prasad</b>
+                        </div>
+                        <hr>
+                        <div class="slide-date">
+                            <b class="font-4 font-small">16-01-2002</b>
                         </div>
                     </div>
                 </div>
-                <div class="grid-e flip-card fadein">
-                    <div class="flip-front p-0 m-0" style="background: url(./static/images/visit/IMG_20240215_151734.jpg);">
-                        <div class="flip-back border">
-                            <div class="visitor-info px-2">
-                                <b class="font-4">Vasamsetti Sai Siva Sankara Vara Prasad</b>
-                                <b class="font-4 font-small">Software Engineer</b>
-                            </div>
-                            <div class="visiting-date bg-dark">
-                                <b class="font-4 font-small">16 January 2002</b>
-                            </div>
+                <div class="grid-e fadein bg-warning slide-back">
+                    <img src="./static/images/visitors/IMG_20240215_151734.jpg" class="slide-image">
+                    <div class="slide-content p-4">
+                        <div class="slide-name">
+                            <b class="font-4">Vasamsetti Sai Siva Sankara Vara Prasad</b>
+                        </div>
+                        <hr>
+                        <div class="slide-date">
+                            <b class="font-4 font-small">16-01-2002</b>
                         </div>
                     </div>
                 </div>
-                <div class="grid-b flip-card fadein">
-                    <div class="flip-front p-0 m-0" style="background: url(./static/images/visit/4.jpg);object-fit:cover;">
-                        <div class="flip-back border">
-                            <div class="visitor-info px-2" style="height: 90% !important;">
-                                <b class="font-4">Vasamsetti Sai Siva Sankara Vara Prasad</b>
-                                <b class="font-4 font-small">Software Engineer</b>
-                            </div>
-                            <div class="visiting-date bg-dark" style="height: 10% !important;">
-                                <b class="font-4 font-small">16 January 2002</b>
-                            </div>
+                <div class="grid-b fadein bg-warning slide-back">
+                    <img src="./static/images/visitors/4.jpg" class="slide-image">
+                    <div class="slide-content p-4">
+                        <div class="slide-name" style="height: 90% !important;">
+                            <b class="font-4">Vasamsetti Sai Siva Sankara Vara Prasad</b>
+                        </div>
+                        <hr>
+                        <div class="slide-date" style="height: 10% !important;">
+                            <b class="font-4 font-small">16-01-2002</b>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row d-flex justify-content-center mt-md-2">
-            <center><a href="./outreach_programs.html" class="btn my-3 py-2 font-4 view-all fadein" style="border:1px solid crimson;color:white;background:linear-gradient(to top,crimson,rgb(235, 122, 144));border-radius:0px;background-color:white;">View All</a></center>
+            <center><a href="./visitors.html" class="btn my-3 py-2 font-4 view-all fadein" style="border:1px solid crimson;color:white;background:linear-gradient(to top,crimson,rgb(235, 122, 144));border-radius:0px;background-color:white;">View All</a></center>
         </div>
     </div>
 
@@ -926,8 +958,8 @@
                 </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-center mt-md-5 mt-3">
-            <center><a href="./alumni.php" class="btn my-3 py-2 font-4 view-all fadein" style="border:1px solid black;color:white;background:linear-gradient(to top,black,rgb(104, 104, 104));border-radius:0px;background-color:white;">View All</a></center>
+        <div class="row d-flex justify-content-center mt-md-5 mt-sm-5 mt-3">
+            <center><a href="./alumni.php" class="btn my-3 my-sm-2 py-2 font-4 view-all fadein" style="border:1px solid black;color:white;background:linear-gradient(to top,black,rgb(104, 104, 104));border-radius:0px;background-color:white;">View All</a></center>
         </div>
     </div>
 

@@ -199,6 +199,43 @@ iframe{
 }
 
 
+/* slideup card */
+.slide-image{
+    width: 100%;
+    height: 100%;
+}
+.slide-back{
+    position: relative;
+    overflow-y: hidden;
+}
+.slide-content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    transform: translateY(100%);
+    transition: 0.25s ease-in-out;
+}
+.slide-name, .slide-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-name{
+    text-align: center;
+    height: 80%;
+}
+.slide-date{
+    height: 20%;
+}
+.slide-back:hover .slide-content{
+    transform: translateY(0);
+}
+
+
+
 /* flip card */
 .flip-front{
     width: 100%;
@@ -215,25 +252,6 @@ iframe{
     opacity: 0;
     transition: 0.2s ease;
 }
-.visitor-info{
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width: 100% !important;
-    height: 80% !important;
-    background-color: whitesmoke;
-}
-.visiting-date{
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
 .flip-card:hover .flip-front{
     cursor:grab;
     transform: rotateY(180deg);
@@ -251,9 +269,8 @@ iframe{
 .grid-container{
     display: grid !important;
     grid-template-columns: repeat(4,minmax(50px, 1fr)) !important;
-    grid-gap: 15px;
-    column-gap: 30px;
-    grid-auto-rows: 100px;
+    grid-gap: 35px;
+    grid-auto-rows: 200px;
     grid-auto-flow: dense !important;
 }
 .grid-div{
@@ -261,6 +278,8 @@ iframe{
     justify-content: center;
     align-items: start;
     position: relative;
+    transition: all 0.5s;
+    transform-origin: top;
 }
 .grid-image{
     width: 100%;
@@ -271,7 +290,16 @@ iframe{
 .article-pin{
     width: 20px;
     position: absolute;
-    top: -20px !important;
+    top: -17px !important;
+    transition: all 0.5s;
+    filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.3));
+}
+.grid-div:hover{
+    transform: translateY(5px) !important;
+}
+.grid-div:hover .article-pin{
+    transform: translateY(-20px);
+    filter: drop-shadow(15px 15px 8px rgba(0, 0, 0, 0.2));
 }
 
 
@@ -333,8 +361,21 @@ iframe{
     }
     .grid-container{
         grid-template-columns: repeat(4,minmax(50px, 1fr)) !important;
-        grid-gap: 5px;
-        grid-auto-rows: 75px;
+        grid-gap: 5px !important;
+        grid-auto-rows: 75px !important;
+    }
+    .article-pin{
+        width: 10px !important;
+        top:-10px !important
+    }
+    .grid-div:hover{
+        transform: translateY(3px)
+    }
+    .grid-div:hover .article-pin{
+        transform: translateY(-7px);
+    }
+    .article-pin{
+        filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.3));
     }
 }
 

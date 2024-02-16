@@ -11,7 +11,7 @@ var image_index = 0;
 img_modal_button.forEach((item,i)=>{
     item.addEventListener('click',()=>{
         image_index = i;
-        image.src = item.value;
+        image.src = item.getAttribute('src')
         image_index_number.textContent = (image_index+1)+"/"+img_modal_button.length;
         $('#img-modal-container').fadeToggle(500,()=>{
             img_modal_close.addEventListener('click',img_close);
@@ -41,7 +41,7 @@ function change_image(n){
         image_index = img_modal_button.length - 1;
     }
     img_modal_container.style.display = 'flex';
-    image.src = img_modal_button[image_index].value;
+    image.src = img_modal_button[image_index].getAttribute('src');
     image_index_number.textContent = (image_index+1)+"/"+img_modal_button.length;
 }
 

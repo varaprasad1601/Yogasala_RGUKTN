@@ -51,8 +51,8 @@
             <hr>
         </div>
         <div class="row">
-            <div class="col-md-12 d-md-flex flex-wrap">
-                <div class="col-md-4 col-12 alumni-cards px-md-3 flip-card my-3">
+            <div class="col-md-12 d-sm-flex flex-wrap">
+                <div class="col-md-4 col-12 col-sm-6 alumni-cards px-sm-3 flip-card my-3">
                     <div class="alumni-card-content border shadow bg-white flip-front" style="position: relative;">
                         <div class="alumni-card-image px-4 pt-3">
                             <img src="./static/images/visitors/15.jpg" class="bg-dark image-fluid" width="100%" height="100%" style="height:200px">
@@ -71,26 +71,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-12 alumni-cards px-md-3 flip-card my-3">
-                    <div class="alumni-card-content border shadow bg-white flip-front" style="position: relative;">
-                        <div class="alumni-card-image px-4 pt-3">
-                            <img src="./static/images/visitors/3.jpg" class="bg-dark image-fluid" width="100%" height="100%" style="height:200px">
-                        </div>
-                        <div class="alumni-card-info p-2 py-3">
-                            <center><b class="font-4">40 characters</b></center>
-                            <center><b class="font-4 font-small text-gray">50 characters</b></center>
-                        </div>
-                        <div class="alumni-details p-4 pt-5 flip-back">
-                            <div class="alumni-info">
-                                <center><b class="font-4 m-0">N180545 <span class="font-large">|</span> CSE <span class="font-large">|</span> 2018 - 2024</b></center>
-                            </div>                            
-                            <div class="alumni-description">
-                                <center><p class="font-4 mt-3 font-small">400 characters</p></center>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 alumni-cards px-md-3 flip-card my-3">
+                <div class="col-md-4 col-12 col-sm-6 alumni-cards px-sm-3 flip-card my-3">
                     <div class="alumni-card-content border shadow bg-white flip-front" style="position: relative;">
                         <div class="alumni-card-image px-4 pt-3">
                             <img src="./static/images/visitors/15.jpg" class="bg-dark image-fluid" width="100%" height="100%" style="height:200px">
@@ -109,140 +90,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-12 alumni-cards px-md-3 flip-card my-3">
-                    <div class="alumni-card-content border shadow bg-white flip-front" style="position: relative;">
-                        <div class="alumni-card-image px-4 pt-3">
-                            <img src="./static/images/visitors/15.jpg" class="bg-dark image-fluid" width="100%" height="100%" style="height:200px">
-                        </div>
-                        <div class="alumni-card-info p-2 py-3">
-                            <center><b class="font-4">40 characters</b></center>
-                            <center><b class="font-4 font-small text-gray">50 characters</b></center>
-                        </div>
-                        <div class="alumni-details p-4 pt-5 flip-back">
-                            <div class="alumni-info">
-                                <center><b class="font-4 m-0">N180545 <span class="font-large">|</span> CSE <span class="font-large">|</span> 2018 - 2024</b></center>
-                            </div>                            
-                            <div class="alumni-description">
-                                <center><p class="font-4 mt-3 font-small">400 characters</p></center>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 alumni-cards px-md-3 flip-card my-3">
-                    <div class="alumni-card-content border shadow bg-white flip-front" style="position: relative;">
-                        <div class="alumni-card-image px-4 pt-3">
-                            <img src="./static/images/visitors/15.jpg" class="bg-dark image-fluid" width="100%" height="100%" style="height:200px">
-                        </div>
-                        <div class="alumni-card-info p-2 py-3">
-                            <center><b class="font-4">40 characters</b></center>
-                            <center><b class="font-4 font-small text-gray">50 characters</b></center>
-                        </div>
-                        <div class="alumni-details p-4 pt-5 flip-back">
-                            <div class="alumni-info">
-                                <center><b class="font-4 m-0">N180545 <span class="font-large">|</span> CSE <span class="font-large">|</span> 2018 - 2024</b></center>
-                            </div>                            
-                            <div class="alumni-description">
-                                <center><p class="font-4 mt-3 font-small">400 characters</p></center>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 alumni-cards px-md-3 flip-card my-3">
-                    <div class="alumni-card-content border shadow bg-white flip-front" style="position: relative;">
-                        <div class="alumni-card-image px-4 pt-3">
-                            <img src="./static/images/visitors/15.jpg" class="bg-dark image-fluid" width="100%" height="100%" style="height:200px">
-                        </div>
-                        <div class="alumni-card-info p-2 py-3">
-                            <center><b class="font-4">40 characters</b></center>
-                            <center><b class="font-4 font-small text-gray">50 characters</b></center>
-                        </div>
-                        <div class="alumni-details p-4 pt-5 flip-back">
-                            <div class="alumni-info">
-                                <center><b class="font-4 m-0">N180545 <span class="font-large">|</span> CSE <span class="font-large">|</span> 2018 - 2024</b></center>
-                            </div>                            
-                            <div class="alumni-description">
-                                <center><p class="font-4 mt-3 font-small">400 characters</p></center>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 alumni-cards px-md-3 flip-card my-3">
-                    <div class="alumni-card-content border shadow bg-white flip-front" style="position: relative;">
-                        <div class="alumni-card-image px-4 pt-3">
-                            <img src="./static/images/visitors/15.jpg" class="bg-dark image-fluid" width="100%" height="100%" style="height:200px">
-                        </div>
-                        <div class="alumni-card-info p-2 py-3">
-                            <center><b class="font-4">40 characters</b></center>
-                            <center><b class="font-4 font-small text-gray">50 characters</b></center>
-                        </div>
-                        <div class="alumni-details p-4 pt-5 flip-back">
-                            <div class="alumni-info">
-                                <center><b class="font-4 m-0">N180545 <span class="font-large">|</span> CSE <span class="font-large">|</span> 2018 - 2024</b></center>
-                            </div>                            
-                            <div class="alumni-description">
-                                <center><p class="font-4 mt-3 font-small">400 characters</p></center>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 alumni-cards px-md-3 flip-card my-3">
-                    <div class="alumni-card-content border shadow bg-white flip-front" style="position: relative;">
-                        <div class="alumni-card-image px-4 pt-3">
-                            <img src="./static/images/visitors/15.jpg" class="bg-dark image-fluid" width="100%" height="100%" style="height:200px">
-                        </div>
-                        <div class="alumni-card-info p-2 py-3">
-                            <center><b class="font-4">40 characters</b></center>
-                            <center><b class="font-4 font-small text-gray">50 characters</b></center>
-                        </div>
-                        <div class="alumni-details p-4 pt-5 flip-back">
-                            <div class="alumni-info">
-                                <center><b class="font-4 m-0">N180545 <span class="font-large">|</span> CSE <span class="font-large">|</span> 2018 - 2024</b></center>
-                            </div>                            
-                            <div class="alumni-description">
-                                <center><p class="font-4 mt-3 font-small">400 characters</p></center>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 alumni-cards px-md-3 flip-card my-3">
-                    <div class="alumni-card-content border shadow bg-white flip-front" style="position: relative;">
-                        <div class="alumni-card-image px-4 pt-3">
-                            <img src="./static/images/visitors/15.jpg" class="bg-dark image-fluid" width="100%" height="100%" style="height:200px">
-                        </div>
-                        <div class="alumni-card-info p-2 py-3">
-                            <center><b class="font-4">40 characters</b></center>
-                            <center><b class="font-4 font-small text-gray">50 characters</b></center>
-                        </div>
-                        <div class="alumni-details p-4 pt-5 flip-back">
-                            <div class="alumni-info">
-                                <center><b class="font-4 m-0">N180545 <span class="font-large">|</span> CSE <span class="font-large">|</span> 2018 - 2024</b></center>
-                            </div>                            
-                            <div class="alumni-description">
-                                <center><p class="font-4 mt-3 font-small">400 characters</p></center>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 alumni-cards px-md-3 flip-card my-3">
-                    <div class="alumni-card-content border shadow bg-white flip-front" style="position: relative;">
-                        <div class="alumni-card-image px-4 pt-3">
-                            <img src="./static/images/visitors/15.jpg" class="bg-dark image-fluid" width="100%" height="100%" style="height:200px">
-                        </div>
-                        <div class="alumni-card-info p-2 py-3">
-                            <center><b class="font-4">40 characters</b></center>
-                            <center><b class="font-4 font-small text-gray">50 characters</b></center>
-                        </div>
-                        <div class="alumni-details p-4 pt-5 flip-back">
-                            <div class="alumni-info">
-                                <center><b class="font-4 m-0">N180545 <span class="font-large">|</span> CSE <span class="font-large">|</span> 2018 - 2024</b></center>
-                            </div>                            
-                            <div class="alumni-description">
-                                <center><p class="font-4 mt-3 font-small">400 characters</p></center>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 alumni-cards px-md-3 flip-card my-3">
+                <div class="col-md-4 col-12 col-sm-6 alumni-cards px-sm-3 flip-card my-3">
                     <div class="alumni-card-content border shadow bg-white flip-front" style="position: relative;">
                         <div class="alumni-card-image px-4 pt-3">
                             <img src="./static/images/visitors/15.jpg" class="bg-dark image-fluid" width="100%" height="100%" style="height:200px">
